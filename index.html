@@ -831,53 +831,275 @@
 }
 </style>
 
-  <section id="pricing">
-    <div class="container">
-      <h2 class="section-title">Pricing Plans</h2>
-      <p class="section-sub">
-        Clean premium pricing cards for showcasing packages or membership levels.
+  <section class="luxury-pricing-section">
+  <div class="container">
+    <div class="pricing-heading">
+      <span class="pricing-tag">Premium Packages</span>
+      <h2>Choose Your Pricing Plan</h2>
+      <p>
+        Select the package that matches your goals. Our premium plans are designed to offer
+        better visibility, stronger branding, and a more polished experience for your profile or business.
       </p>
-
-      <div class="pricing">
-        <div class="plan">
-          <h3>Basic</h3>
-          <div class="price">₹999</div>
-          <ul>
-            <li>1 Profile Listing</li>
-            <li>Basic Support</li>
-            <li>Mobile Friendly</li>
-            <li>Email Inquiry</li>
-          </ul>
-          <a href="#contact" class="btn btn-gold">Choose Plan</a>
-        </div>
-
-        <div class="plan">
-          <h3>Standard</h3>
-          <div class="price">₹1999</div>
-          <ul>
-            <li>3 Profile Listings</li>
-            <li>Priority Visibility</li>
-            <li>WhatsApp Inquiry</li>
-            <li>Premium Support</li>
-          </ul>
-          <a href="#contact" class="btn btn-gold">Choose Plan</a>
-        </div>
-
-        <div class="plan">
-          <h3>Premium</h3>
-          <div class="price">₹3999</div>
-          <ul>
-            <li>Unlimited Listings</li>
-            <li>Featured Placement</li>
-            <li>Telegram + WhatsApp Leads</li>
-            <li>Dedicated Assistance</li>
-          </ul>
-          <a href="#contact" class="btn btn-gold">Choose Plan</a>
-        </div>
-      </div>
     </div>
-  </section>
 
+    <div class="pricing-grid">
+
+      <!-- BASIC PLAN -->
+      <div class="pricing-card">
+        <div class="plan-label">Starter</div>
+        <h3>Basic Plan</h3>
+        <div class="price">₹999<span>/month</span></div>
+        <ul>
+          <li>1 premium profile listing</li>
+          <li>Luxury card layout</li>
+          <li>Mobile-friendly display</li>
+          <li>Basic profile visibility</li>
+          <li>Contact button support</li>
+          <li>Photo gallery section</li>
+          <li>Simple inquiry option</li>
+          <li>Fast page loading design</li>
+          <li>Clean premium styling</li>
+          <li>Email support access</li>
+        </ul>
+        <a href="#contact" class="plan-btn">Choose Basic</a>
+      </div>
+
+      <!-- STANDARD PLAN -->
+      <div class="pricing-card featured-plan">
+        <div class="plan-label">Most Popular</div>
+        <h3>Standard Plan</h3>
+        <div class="price">₹1999<span>/month</span></div>
+        <ul>
+          <li>3 premium profile listings</li>
+          <li>Featured homepage placement</li>
+          <li>Luxury profile design</li>
+          <li>Priority mobile optimization</li>
+          <li>WhatsApp contact button</li>
+          <li>Telegram contact button</li>
+          <li>Enhanced photo gallery</li>
+          <li>Article section support</li>
+          <li>Priority inquiry visibility</li>
+          <li>Premium customer support</li>
+        </ul>
+        <a href="#contact" class="plan-btn">Choose Standard</a>
+      </div>
+
+      <!-- PREMIUM PLAN -->
+      <div class="pricing-card">
+        <div class="plan-label">Elite Access</div>
+        <h3>Premium Plan</h3>
+        <div class="price">₹3999<span>/month</span></div>
+        <ul>
+          <li>Unlimited profile listings</li>
+          <li>Top featured homepage visibility</li>
+          <li>Luxury elite profile styling</li>
+          <li>Advanced branding support</li>
+          <li>Dedicated WhatsApp integration</li>
+          <li>Dedicated Telegram integration</li>
+          <li>Full gallery showcase</li>
+          <li>Custom article placement</li>
+          <li>Priority lead access</li>
+          <li>VIP premium support service</li>
+        </ul>
+        <a href="#contact" class="plan-btn">Choose Premium</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+.luxury-pricing-section{
+  padding:90px 20px;
+  background:linear-gradient(135deg,#050505,#111111,#1a1a1a);
+  color:#fff;
+}
+
+.luxury-pricing-section .container{
+  max-width:1200px;
+  margin:auto;
+}
+
+.pricing-heading{
+  text-align:center;
+  max-width:850px;
+  margin:0 auto 55px;
+}
+
+.pricing-tag{
+  display:inline-block;
+  color:#d4af37;
+  font-size:14px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  margin-bottom:12px;
+}
+
+.pricing-heading h2{
+  font-size:42px;
+  color:#d4af37;
+  margin-bottom:18px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+.pricing-heading p{
+  font-size:17px;
+  line-height:1.8;
+  color:#d0d0d0;
+}
+
+.pricing-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:26px;
+}
+
+.pricing-card{
+  position:relative;
+  background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+  border:1px solid rgba(212,175,55,0.22);
+  border-radius:24px;
+  padding:32px 26px;
+  box-shadow:0 16px 35px rgba(0,0,0,0.30);
+  transition:all 0.35s ease;
+  overflow:hidden;
+}
+
+.pricing-card:hover{
+  transform:translateY(-8px);
+  border-color:#d4af37;
+  box-shadow:0 18px 40px rgba(212,175,55,0.10);
+}
+
+.pricing-card::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:-100%;
+  width:100%;
+  height:100%;
+  background:linear-gradient(90deg, transparent, rgba(212,175,55,0.10), transparent);
+  transition:0.7s;
+}
+
+.pricing-card:hover::before{
+  left:100%;
+}
+
+.featured-plan{
+  transform:scale(1.03);
+  border:1px solid #d4af37;
+}
+
+.plan-label{
+  display:inline-block;
+  padding:8px 14px;
+  border-radius:50px;
+  background:rgba(212,175,55,0.12);
+  color:#d4af37;
+  border:1px solid rgba(212,175,55,0.30);
+  font-size:13px;
+  font-weight:600;
+  margin-bottom:18px;
+}
+
+.pricing-card h3{
+  font-size:30px;
+  margin-bottom:14px;
+  color:#ffffff;
+}
+
+.price{
+  font-size:42px;
+  font-weight:800;
+  color:#d4af37;
+  margin-bottom:22px;
+}
+
+.price span{
+  font-size:16px;
+  color:#cfcfcf;
+  font-weight:500;
+}
+
+.pricing-card ul{
+  list-style:none;
+  padding:0;
+  margin:0 0 28px;
+}
+
+.pricing-card ul li{
+  position:relative;
+  padding:10px 0 10px 28px;
+  color:#d7d7d7;
+  font-size:15px;
+  border-bottom:1px solid rgba(255,255,255,0.06);
+}
+
+.pricing-card ul li::before{
+  content:"✦";
+  position:absolute;
+  left:0;
+  top:10px;
+  color:#d4af37;
+  font-size:15px;
+}
+
+.plan-btn{
+  display:inline-block;
+  width:100%;
+  text-align:center;
+  padding:14px 20px;
+  border-radius:999px;
+  background:#d4af37;
+  color:#111;
+  font-weight:700;
+  text-decoration:none;
+  transition:all 0.3s ease;
+}
+
+.plan-btn:hover{
+  background:#f0cc5a;
+  transform:translateY(-2px);
+}
+
+@media (max-width: 992px){
+  .pricing-grid{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media (max-width: 768px){
+  .pricing-heading h2{
+    font-size:30px;
+  }
+
+  .pricing-heading p{
+    font-size:15px;
+  }
+
+  .pricing-grid{
+    grid-template-columns:1fr;
+  }
+
+  .featured-plan{
+    transform:none;
+  }
+
+  .pricing-card{
+    padding:26px 20px;
+  }
+
+  .pricing-card h3{
+    font-size:26px;
+  }
+
+  .price{
+    font-size:36px;
+  }
+}
+</style>
   <section id="profiles">
     <div class="container">
       <h2 class="section-title">Live Profile System</h2>
