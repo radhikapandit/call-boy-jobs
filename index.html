@@ -628,30 +628,208 @@
 }
 </style>
 
-  <section id="why">
-    <div class="container">
-      <h2 class="section-title">Why Join Our Company</h2>
-      <p class="section-sub">
-        A premium platform should not only look beautiful but also help users navigate quickly,
-        contact easily, and browse profiles without confusion.
+  <section class="why-join-luxury">
+  <div class="container">
+    <div class="section-heading">
+      <span class="sub-title">Why Choose Us</span>
+      <h2>Why Join Our Company</h2>
+      <p>
+        We focus on quality, professionalism, and a premium user experience. Our platform is designed
+        to help people grow with confidence, enjoy flexible opportunities, and work in a polished,
+        well-structured environment.
       </p>
+    </div>
 
-      <div class="cards">
-        <div class="card">
-          <h3>Luxury Branding</h3>
-          <p>Gold-accent dark styling gives your website a premium feel that stands out.</p>
-        </div>
-        <div class="card">
-          <h3>Fast Mobile Layout</h3>
-          <p>Responsive structure keeps cards, buttons, and forms clean on all screen sizes.</p>
-        </div>
-        <div class="card">
-          <h3>Simple Lead Flow</h3>
-          <p>Users can contact through form, Telegram, or WhatsApp without extra steps.</p>
-        </div>
+    <div class="join-grid">
+      <div class="join-card">
+        <div class="icon-box">★</div>
+        <h3>Premium Brand Image</h3>
+        <p>
+          Join a company built with a luxury presentation and modern identity. A strong brand image
+          helps create trust, improves visibility, and gives every profile a more professional look.
+        </p>
+      </div>
+
+      <div class="join-card">
+        <div class="icon-box">₹</div>
+        <h3>High Growth Potential</h3>
+        <p>
+          Our platform is designed for people who want better earning opportunities and long-term
+          growth. With the right presentation and support, you can reach more users and grow faster.
+        </p>
+      </div>
+
+      <div class="join-card">
+        <div class="icon-box">⏰</div>
+        <h3>Flexible Working Style</h3>
+        <p>
+          Flexibility is one of the biggest advantages of joining us. You can manage your schedule
+          more comfortably and choose a work style that fits your goals and lifestyle.
+        </p>
+      </div>
+
+      <div class="join-card">
+        <div class="icon-box">🛡</div>
+        <h3>Privacy & Trust</h3>
+        <p>
+          We value professionalism, privacy, and a secure experience. Our structure is built to
+          support confidence, reduce confusion, and create a more trusted environment for everyone.
+        </p>
+      </div>
+
+      <div class="join-card">
+        <div class="icon-box">🌍</div>
+        <h3>Wider Reach</h3>
+        <p>
+          A polished digital platform helps expand your reach and connect with a larger audience.
+          This gives you a better chance to build visibility and attract more genuine interest.
+        </p>
+      </div>
+
+      <div class="join-card">
+        <div class="icon-box">☎</div>
+        <h3>Dedicated Support</h3>
+        <p>
+          We believe strong support creates a better experience. From guidance to communication,
+          our platform is structured to make the journey smoother and more user-friendly.
+        </p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<style>
+.why-join-luxury{
+  padding: 90px 20px;
+  background: linear-gradient(135deg, #050505, #111111, #1a1a1a);
+  color: #fff;
+}
+
+.why-join-luxury .container{
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-heading{
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 50px;
+}
+
+.section-heading .sub-title{
+  display: inline-block;
+  color: #d4af37;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.section-heading h2{
+  font-size: 42px;
+  margin-bottom: 18px;
+  color: #d4af37;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-heading p{
+  font-size: 17px;
+  line-height: 1.8;
+  color: #d0d0d0;
+}
+
+.join-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.join-card{
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+  border: 1px solid rgba(212,175,55,0.22);
+  border-radius: 22px;
+  padding: 30px 24px;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.28);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.join-card::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(212,175,55,0.10), transparent);
+  transition: 0.6s;
+}
+
+.join-card:hover::before{
+  left: 100%;
+}
+
+.join-card:hover{
+  transform: translateY(-8px);
+  border-color: #d4af37;
+}
+
+.icon-box{
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(212,175,55,0.12);
+  border: 1px solid rgba(212,175,55,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d4af37;
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+
+.join-card h3{
+  font-size: 24px;
+  margin-bottom: 14px;
+  color: #ffffff;
+}
+
+.join-card p{
+  font-size: 15px;
+  line-height: 1.8;
+  color: #cfcfcf;
+}
+
+@media (max-width: 992px){
+  .join-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px){
+  .section-heading h2{
+    font-size: 30px;
+  }
+
+  .section-heading p{
+    font-size: 15px;
+  }
+
+  .join-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .join-card{
+    padding: 24px 20px;
+  }
+
+  .join-card h3{
+    font-size: 21px;
+  }
+}
+</style>
 
   <section id="pricing">
     <div class="container">
